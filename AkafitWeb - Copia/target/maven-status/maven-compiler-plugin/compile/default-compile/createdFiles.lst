@@ -1,0 +1,8 @@
+br\com\akafit\controller\LoginServlet.class
+br\com\akafit\controller\AlunoServlet.class
+br\com\akafit\dao\ConexaoDB.class
+br\com\akafit\model\FichaTreino.class
+br\com\akafit\model\Aluno.class
+br\com\akafit\controller\FichaTreinoServlet.class
+br\com\akafit\dao\AlunoDAO.class
+br\com\akafit\dao\FichaTreinoDAO.class

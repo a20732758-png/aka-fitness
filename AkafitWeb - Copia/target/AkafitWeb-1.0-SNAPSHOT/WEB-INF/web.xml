@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!-- 1. MAPEAMENTO DE FICHA TREINO SERVLET -->
+    <servlet>
+        <servlet-name>FichaTreinoServlet</servlet-name>
+        <servlet-class>br.com.akafit.controller.FichaTreinoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FichaTreinoServlet</servlet-name>
+        <url-pattern>/ficha</url-pattern>
+    </servlet-mapping>
+    
+    <!-- 2. MAPEAMENTO DE OUTROS SERVLETS (MANTER OU ADICIONAR CONFORME NECESSÁRIO) -->
+    <!-- Exemplo:
+    <servlet>
+        <servlet-name>AlunoServlet</servlet-name>
+        <servlet-class>br.com.akafit.controller.AlunoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlunoServlet</servlet-name>
+        <url-pattern>/aluno</url-pattern>
+    </servlet-mapping>
+    -->
+    
+    <!-- CONFIGURAÇÃO DE SESSÃO -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- PÁGINAS DE BOAS-VINDAS -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
